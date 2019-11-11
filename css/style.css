@@ -1,0 +1,464 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+  background-color:white;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.current a{
+  color: rgba(70, 68, 75, 1);
+}
+
+h1{
+  font-size: 32px;
+  line-height: 1;
+  padding: 110px 0;
+  text-align: center;
+  color: rgba(70, 68, 75, 1);
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+  color: rgba(70, 68, 75, 1);
+}
+
+h5{
+  font-size: 14px;
+  line-height: 1.5;
+  color: grey;
+  font-weight: 500;
+}
+
+span{
+  color: black;
+}
+
+nav a{
+  color: grey;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;      
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  position: fixed;
+  top: 0;
+}
+
+:focus /*Your code here*/{
+  outline: none;
+  border: 2px solid black;
+}
+
+footer{
+  grid-column: 1 / -1; 
+  grid-row: -1;  
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.image{
+  opacity: 1;
+  display: block;
+  transition: 0.25s ease;
+  backface-visibility: hidden;
+}
+
+.middle{
+  transform: 0.25s ease;
+  padding: 30px;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.treasure-hunt:hover .image {
+  opacity: 0.3;
+}
+
+.treasure-hunt:hover .middle {
+  opacity: 1;
+}
+
+.there-is-one-time:hover .image {
+  opacity: 0.3;
+}
+
+.there-is-one-time:hover .middle {
+  opacity: 1;
+}
+
+.collcare:hover .image {
+  opacity: 0.3;
+}
+
+.collcare:hover .middle {
+  opacity: 1;
+}
+
+.wedding:hover .image {
+  opacity: 0.3;
+}
+
+.wedding:hover .middle {
+  opacity: 1;
+}
+
+.happysignals:hover .image {
+  opacity: 0.3;
+}
+
+.happysignals:hover .middle {
+  opacity: 1;
+}
+
+.via-esca:hover .image {
+  opacity: 0.3;
+}
+
+.via-esca:hover .middle {
+  opacity: 1;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 120px 300px auto auto auto auto auto auto 50px;
+  grid-row-gap: 30px;
+  width: 100vw;
+  text-align: center;
+}
+
+.nav{
+  grid-column-start:2;
+  grid-row-start:1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+li{
+  margin-top: 15px;
+}
+
+header{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+header h1{
+  justify-content: center;
+}
+
+.ux-design{
+  grid-column: 2/3;
+  grid-row: 3/9;
+}
+
+.treasure-hunt{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  overflow: hidden;
+}
+
+.treasure-hunt img{
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+}
+
+.there-is-one-time{
+  grid-column:2/3;
+  grid-row: 4/5;
+}
+
+.there-is-one-time img{
+  width: 100%;
+  height:100%;
+  object-fit: contain ;
+}
+
+.collcare{
+  grid-column:2/3;
+  grid-row: 5/6;
+}
+
+.collcare img{
+  width: 100%;
+  height:100%;
+  object-fit: contain ;
+}
+
+.wedding{
+  grid-column:2/3;
+  grid-row: 7/8;
+}
+
+.wedding img{
+  width: 100%;
+  height:100%;
+  object-fit: contain ;
+}
+
+.happysignals{
+  grid-column:2/3;
+  grid-row: 8/9;
+}
+
+.happysignals img{
+  width: 100%;
+  height:100%;
+  object-fit: contain ;
+}
+
+.via-esca{
+  grid-column:2/3;
+  grid-row: 9/10;
+}
+
+.via-esca img{
+  width: 100%;
+  height:100%;
+  object-fit: contain ;
+}
+
+.inspiration{
+  grid-column: 2/3;
+  grid-row: 3/9;
+}
+
+.arch{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.arch1 img{
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+}
+
+.bio-image{
+  grid-column:2/3;
+  grid-row:3/4;
+  overflow: hidden;
+}
+
+.bio-image img{
+  width: 100%;
+  height:100%;
+  object-fit: contain ;
+}
+
+.bio-text{
+  grid-column-start:2;
+  grid-row: 4/5;
+}
+
+.footer{
+  grid-column: 1/-1;
+  grid-row-start: -1;
+}
+
+/*@media screen and (min-width: 800px)!*Your code here - Add the first media query.*!{
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 70px 300px auto auto auto auto auto auto 50px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  width: 100vw;
+  }
+
+.nav{
+  grid-column:1/-1;
+  grid-row: 1;
+  padding: 10px;
+  display: flex;
+  justify-self: flex-end;
+  flex-wrap: nowrap;
+  }
+
+}*/
+
+.nav ul{
+  display: flex;
+}
+.nav ul li{
+  padding: 0 20px;
+}
+.ux-design{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width:1024px){
+  section{
+    width: 48%;
+  }
+  .inspiration section{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .inspiration section img{
+    width: 48%;
+  }
+  .contact100-form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact100-form .contact100-form-title{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .contact100-form .wrap-input100{
+    width: 48%;
+    text-align: center;
+    padding: 10px;
+  }
+  .contact100-form .container-contact100-form-btn{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .contact100-form .container-contact100-form-btn button{
+    line-height: 34px;
+    padding:  0 16px;
+  }
+  .contact100-form input,.contact100-form textarea{
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+  }
+  .contact100-form textarea{
+    height: 100px;
+  }
+}
+@media  (min-width: 768px) and (max-width: 1024px) {
+  section{
+    width: 48%;
+  }
+  .inspiration section{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .inspiration section img{
+    width: 48%;
+  }
+
+  .contact100-form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact100-form .contact100-form-title{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .contact100-form .wrap-input100{
+    width: 48%;
+    text-align: center;
+    padding: 10px;
+  }
+  .contact100-form .container-contact100-form-btn{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .contact100-form .container-contact100-form-btn button{
+    line-height: 34px;
+    padding:  0 16px;
+  }
+  .contact100-form input,.contact100-form textarea{
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+  }
+  .contact100-form textarea{
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul{
+    flex-direction: column;
+  }
+  .container{
+    grid-template-rows: auto;
+  }
+  section{
+    width: 98%;
+  }
+  .inspiration section{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .inspiration section img{
+    width: 98%;
+  }
+
+
+  .contact100-form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact100-form .contact100-form-title{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .contact100-form .wrap-input100{
+    width: 98%;
+    text-align: center;
+    padding: 10px;
+  }
+  .contact100-form .container-contact100-form-btn{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .contact100-form .container-contact100-form-btn button{
+    line-height: 34px;
+    padding:  0 16px;
+  }
+  .contact100-form input,.contact100-form textarea{
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+  }
+  .contact100-form textarea{
+    height: 100px;
+  }
+}
