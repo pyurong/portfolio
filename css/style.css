@@ -1,20 +1,20 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: Helvetica, sans-serif;
-  background-color:white;
+  background-color: white;
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
 
-.current a{
+.current a {
   color: rgba(70, 68, 75, 1);
 }
 
-h1{
+h1 {
   font-size: 32px;
   line-height: 1;
   padding: 110px 0;
@@ -22,76 +22,84 @@ h1{
   color: rgba(70, 68, 75, 1);
 }
 
-h2{
+h2 {
   font-size: 32px;
   line-height: 1.5;
   color: rgba(70, 68, 75, 1);
 }
 
-h5{
+h5 {
   font-size: 14px;
   line-height: 1.5;
   color: grey;
   font-weight: 500;
 }
 
-span{
+span {
   color: black;
 }
 
-nav a{
+nav a {
   color: grey;
   font-weight: bold;
   text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
   text-decoration: underline;
 }
 
-.skip a{
+.skip a {
   background: white;
   left: 0;
   padding: 6px;
   position: absolute;
-  top: -40px;      
+  top: -40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
 }
 
-.skip a:focus{
+.skip a:focus {
   position: fixed;
   top: 0;
 }
 
-:focus /*Your code here*/{
+:focus
+
+/*Your code here*/
+  {
   outline: none;
   border: 2px solid black;
 }
 
-footer{
-  grid-column: 1 / -1; 
-  grid-row: -1;  
+footer {
+  grid-column: 1 / -1;
+  /* grid-row: -1; */
   padding-bottom: 30px;
   text-align: center;
 }
 
-.image{
+.image {
   opacity: 1;
   display: block;
   transition: 0.25s ease;
   backface-visibility: hidden;
 }
 
-.middle{
-  transform: 0.25s ease;
-  padding: 30px;
-  opacity: 0;
+.happysignals {
   position: relative;
+}
+
+.middle {
+  width: 100%;
+  transform: 0.25s ease;
+  padding: 30px 0;
+  opacity: 0;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -143,18 +151,23 @@ footer{
 .via-esca:hover .middle {
   opacity: 1;
 }
-.container{
+
+.container {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 120px 300px auto auto auto auto auto auto 50px;
+  grid-template-rows: 40px 300px auto auto auto auto auto auto 50px;
   grid-row-gap: 30px;
   width: 100vw;
   text-align: center;
 }
 
-.nav{
-  grid-column-start:2;
-  grid-row-start:1;
+.inspiration.container {
+  grid-template-rows: 40px 50px auto auto auto auto auto auto 50px;
+}
+
+.nav {
+  grid-column-start: 2;
+  grid-row-start: 1;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -162,96 +175,107 @@ footer{
   text-align: center;
 }
 
-li{
+li {
   margin-top: 15px;
 }
 
-header{
+header {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-header h1{
+
+header h1 {
   justify-content: center;
+  text-shadow: 4px 4px 3px #ccc;
 }
 
-.ux-design{
+.ux-design {
   grid-column: 2/3;
   grid-row: 3/9;
 }
 
-.treasure-hunt{
+.ux-design section {
+  position: relative;
+  margin: 10px 0;
+}
+
+.treasure-hunt {
   grid-column: 2/3;
   grid-row: 3/4;
   overflow: hidden;
 }
 
-.treasure-hunt img{
+.treasure-hunt img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: contain;
 }
 
-.there-is-one-time{
-  grid-column:2/3;
+.there-is-one-time {
+  grid-column: 2/3;
   grid-row: 4/5;
 }
 
-.there-is-one-time img{
+.there-is-one-time img {
   width: 100%;
-  height:100%;
-  object-fit: contain ;
+  height: 100%;
+  object-fit: contain;
 }
 
-.collcare{
-  grid-column:2/3;
+.collcare {
+  grid-column: 2/3;
   grid-row: 5/6;
 }
 
-.collcare img{
+.collcare img {
   width: 100%;
-  height:100%;
-  object-fit: contain ;
+  height: 100%;
+  object-fit: contain;
 }
 
-.wedding{
-  grid-column:2/3;
+.wedding {
+  grid-column: 2/3;
   grid-row: 7/8;
 }
 
-.wedding img{
+.wedding img {
   width: 100%;
-  height:100%;
-  object-fit: contain ;
+  height: 100%;
+  object-fit: contain;
 }
 
-.happysignals{
-  grid-column:2/3;
+.happysignals {
+  grid-column: 2/3;
   grid-row: 8/9;
 }
 
-.happysignals img{
+.happysignals img {
   width: 100%;
-  height:100%;
-  object-fit: contain ;
+  height: 100%;
+  object-fit: contain;
 }
 
-.via-esca{
-  grid-column:2/3;
+.via-esca {
+  grid-column: 2/3;
   grid-row: 9/10;
 }
 
-.via-esca img{
+.via-esca img {
   width: 100%;
-  height:100%;
-  object-fit: contain ;
+  height: 100%;
+  object-fit: contain;
 }
 
-.inspiration{
+.inspiration {
   grid-column: 2/3;
   grid-row: 3/9;
 }
 
-.arch{
+.inspiration img {
+  margin: 10px 0;
+}
+
+.arch {
   grid-column: 2/3;
   grid-row: 3/4;
   display: flex;
@@ -259,206 +283,295 @@ header h1{
   flex-wrap: wrap;
 }
 
-.arch1 img{
+.arch1 img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: contain;
 }
 
-.bio-image{
-  grid-column:2/3;
-  grid-row:3/4;
+.bio-image {
+  grid-column: 2/3;
+  grid-row: 3/4;
   overflow: hidden;
 }
 
-.bio-image img{
+.bio-image img {
   width: 100%;
-  height:100%;
-  object-fit: contain ;
+  height: 100%;
+  object-fit: contain;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
 
-.bio-text{
-  grid-column-start:2;
+.bio-image img:hover{
+  transform: rotateY(180deg);
+}
+
+.theback{
+  width:100%;
+  height:100%;
+  color:white;
+  transform: rotateY(180deg);
+}
+
+.bio-text {
+  grid-column-start: 2;
   grid-row: 4/5;
 }
 
-.footer{
+.footer {
   grid-column: 1/-1;
   grid-row-start: -1;
 }
 
-/*@media screen and (min-width: 800px)!*Your code here - Add the first media query.*!{
-
-.container{
-  display: grid;
-  grid-template-columns: 1fr 4fr 4fr 1fr;
-  grid-template-rows: 70px 300px auto auto auto auto auto auto 50px;
-  grid-row-gap: 30px;
-  grid-column-gap: 30px;
-  width: 100vw;
-  }
-
-.nav{
-  grid-column:1/-1;
-  grid-row: 1;
-  padding: 10px;
-  display: flex;
-  justify-self: flex-end;
-  flex-wrap: nowrap;
-  }
-
-}*/
-
-.nav ul{
+.nav ul {
   display: flex;
 }
-.nav ul li{
+
+.nav ul li {
   padding: 0 20px;
 }
-.ux-design{
+
+.ux-design {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (min-width:1024px){
-  section{
-    width: 48%;
-  }
-  .inspiration section{
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .inspiration section img{
-    width: 48%;
-  }
-  .contact100-form{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .contact100-form .contact100-form-title{
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-  .contact100-form .wrap-input100{
-    width: 48%;
-    text-align: center;
-    padding: 10px;
-  }
-  .contact100-form .container-contact100-form-btn{
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-  .contact100-form .container-contact100-form-btn button{
-    line-height: 34px;
-    padding:  0 16px;
-  }
-  .contact100-form input,.contact100-form textarea{
-    width: 80%;
-    height: 30px;
-    padding: 5px 10px;
-  }
-  .contact100-form textarea{
-    height: 100px;
-  }
-}
-@media  (min-width: 768px) and (max-width: 1024px) {
-  section{
-    width: 48%;
-  }
-  .inspiration section{
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .inspiration section img{
+
+@media (min-width:1024px) {
+  section {
     width: 48%;
   }
 
-  .contact100-form{
+  .inspiration section {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .inspiration section img {
+    width: 23%;
+    margin: 10px 1%;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  .inspiration img:hover {
+    box-shadow: 2px 4px 3px #ccc;
+  }
+
+  .contact100-form {
     display: flex;
     flex-wrap: wrap;
   }
-  .contact100-form .contact100-form-title{
+
+  .contact100-form .contact100-form-title {
     width: 100%;
     text-align: center;
     padding: 10px;
   }
-  .contact100-form .wrap-input100{
-    width: 48%;
+
+  .contact100-form .wrap-input100 {
+    width: 100%;
     text-align: center;
     padding: 10px;
   }
-  .contact100-form .container-contact100-form-btn{
+
+  .contact100-form .container-contact100-form-btn {
     width: 100%;
     text-align: center;
     padding: 10px 0;
   }
-  .contact100-form .container-contact100-form-btn button{
+
+  .contact100-form .container-contact100-form-btn button {
     line-height: 34px;
-    padding:  0 16px;
+    padding: 0 16px;
   }
-  .contact100-form input,.contact100-form textarea{
+
+  .contact100-form input,
+  .contact100-form textarea {
     width: 80%;
     height: 30px;
     padding: 5px 10px;
   }
-  .contact100-form textarea{
+
+  .contact100-form textarea {
     height: 100px;
+  }
+
+  .container-contact100.contact {
+    margin-top: 10%;
+  }
+  .contact.footer{
+    grid-column: 1 / -1;
+    /* grid-row: -1; */
+    padding-bottom: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    width: 48%;
+  }
+
+  .container-contact100.contact {
+    margin-top: 20%;
+  }
+
+  .inspiration section {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .inspiration section img {
+    width: 48%;
+    flex-grow: 1;
+    margin: 10px 1%;
+  }
+
+  .contact100-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact100-form .contact100-form-title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .wrap-input100 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .container-contact100-form-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .contact100-form .container-contact100-form-btn button {
+    line-height: 34px;
+    padding: 0 16px;
+  }
+
+  .contact100-form input,
+  .contact100-form textarea {
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+  }
+
+  .contact100-form textarea {
+    height: 100px;
+  }
+  .contact.footer{
+    grid-column: 1 / -1;
+    /* grid-row: -1; */
+    padding-bottom: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .nav ul{
+  .container-contact100.contact {
+    margin-top: 20%;
+  }
+
+  .nav ul {
     flex-direction: column;
   }
-  .container{
+
+  .container {
     grid-template-rows: auto;
   }
-  section{
+
+  section {
     width: 98%;
   }
-  .inspiration section{
+
+  .inspiration section {
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
   }
-  .inspiration section img{
+
+  .inspiration section img {
     width: 98%;
   }
 
 
-  .contact100-form{
+  .contact100-form {
     display: flex;
     flex-wrap: wrap;
   }
-  .contact100-form .contact100-form-title{
+
+  .contact100-form .contact100-form-title {
     width: 100%;
     text-align: center;
     padding: 10px;
   }
-  .contact100-form .wrap-input100{
+
+  .contact100-form .wrap-input100 {
     width: 98%;
     text-align: center;
     padding: 10px;
   }
-  .contact100-form .container-contact100-form-btn{
+
+  .contact100-form .container-contact100-form-btn {
     width: 100%;
     text-align: center;
     padding: 10px 0;
   }
-  .contact100-form .container-contact100-form-btn button{
+
+  .contact100-form .container-contact100-form-btn button {
     line-height: 34px;
-    padding:  0 16px;
+    padding: 0 16px;
   }
-  .contact100-form input,.contact100-form textarea{
+
+  .contact100-form input,
+  .contact100-form textarea {
     width: 80%;
     height: 30px;
     padding: 5px 10px;
   }
-  .contact100-form textarea{
+
+  .contact100-form textarea {
     height: 100px;
   }
+}
+
+.shadowbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  display: none;
+
+}
+
+.shadowbox img {
+  max-width: 90%;
+  width: 100%;
+  max-height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
