@@ -1,0 +1,598 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.current a {
+  color: rgba(70, 68, 75, 1);
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1;
+  padding: 110px 0;
+  text-align: center;
+  color: rgba(70, 68, 75, 1);
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  color: rgba(70, 68, 75, 1);
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: grey;
+  font-weight: 500;
+}
+
+span {
+  color: black;
+}
+
+nav a {
+  color: grey;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.skip a {
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus {
+  position: fixed;
+  top: 0;
+}
+
+:focus
+
+/*Your code here*/
+  {
+  outline: none;
+  border: 2px solid black;
+}
+
+footer {
+  grid-column: 1 / -1;
+  /* grid-row: -1; */
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: 0.25s ease;
+  backface-visibility: hidden;
+}
+
+.happysignals {
+  position: relative;
+}
+
+.middle {
+  width: 100%;
+  transform: 0.25s ease;
+  padding: 30px 0;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.treasure-hunt:hover .image {
+  opacity: 0.3;
+}
+
+.treasure-hunt:hover .middle {
+  opacity: 1;
+}
+
+.there-is-one-time:hover .image {
+  opacity: 0.3;
+}
+
+.there-is-one-time:hover .middle {
+  opacity: 1;
+}
+
+.collcare:hover .image {
+  opacity: 0.3;
+}
+
+.collcare:hover .middle {
+  opacity: 1;
+}
+
+.wedding:hover .image {
+  opacity: 0.3;
+}
+
+.wedding:hover .middle {
+  opacity: 1;
+}
+
+.happysignals:hover .image {
+  opacity: 0.3;
+}
+
+.happysignals:hover .middle {
+  opacity: 1;
+}
+
+.via-esca:hover .image {
+  opacity: 0.3;
+}
+
+.via-esca:hover .middle {
+  opacity: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 40px 300px auto auto auto auto auto auto 50px;
+  grid-row-gap: 30px;
+  width: 100vw;
+  text-align: center;
+}
+
+.inspiration.container {
+  grid-template-rows: 40px 50px auto auto auto auto auto auto 50px;
+}
+
+.nav {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+li {
+  margin-top: 15px;
+}
+
+header {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+header h1 {
+  justify-content: center;
+  text-shadow: 4px 4px 3px #ccc;
+}
+
+.ux-design {
+  grid-column: 2/3;
+  grid-row: 3/9;
+}
+
+.ux-design section {
+  position: relative;
+  margin: 10px 0;
+}
+
+.treasure-hunt {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  overflow: hidden;
+}
+
+.treasure-hunt img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.there-is-one-time {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.there-is-one-time img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.collcare {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.collcare img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wedding {
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
+
+.wedding img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.happysignals {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+
+.happysignals img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.via-esca {
+  grid-column: 2/3;
+  grid-row: 9/10;
+}
+
+.via-esca img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.inspiration {
+  grid-column: 2/3;
+  grid-row: 3/9;
+}
+
+.inspiration img {
+  margin: 10px 0;
+}
+
+.arch {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.arch1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bio-image {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  overflow: hidden;
+}
+
+.bio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.bio-image img:hover{
+  transform: rotateY(180deg);
+}
+
+.theback{
+  width:100%;
+  height:100%;
+  color:white;
+  transform: rotateY(180deg);
+}
+
+.bio-text {
+  grid-column-start: 2;
+  grid-row: 4/5;
+}
+
+.footer {
+  grid-column: 1/-1;
+  grid-row-start: -1;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  padding: 0 20px;
+}
+
+.ux-design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width:1024px) {
+  section {
+    width: 48%;
+  }
+
+  .inspiration section {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .inspiration section img {
+    width: 23%;
+    margin: 10px 1%;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  .inspiration img:hover {
+    box-shadow: 2px 4px 3px #ccc;
+  }
+
+  .contact100-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact100-form .contact100-form-title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .wrap-input100 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .container-contact100-form-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .contact100-form .container-contact100-form-btn button {
+    line-height: 34px;
+    padding: 0 16px;
+  }
+
+  .contact100-form input,
+  .contact100-form textarea {
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+  }
+
+  .contact100-form textarea {
+    height: 100px;
+  }
+
+  .container-contact100.contact {
+    margin-top: 10%;
+  }
+  .contact.footer{
+    grid-column: 1 / -1;
+    /* grid-row: -1; */
+    padding-bottom: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    width: 48%;
+  }
+
+  .container-contact100.contact {
+    margin-top: 20%;
+  }
+
+  .inspiration section {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .inspiration section img {
+    width: 48%;
+    flex-grow: 1;
+    margin: 10px 1%;
+  }
+
+  .contact100-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact100-form .contact100-form-title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .wrap-input100 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .container-contact100-form-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .contact100-form .container-contact100-form-btn button {
+    line-height: 34px;
+    padding: 0 16px;
+  }
+
+  .contact100-form input,
+  .contact100-form textarea {
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+  }
+
+  .contact100-form textarea {
+    height: 100px;
+  }
+  .contact.footer{
+    grid-column: 1 / -1;
+    /* grid-row: -1; */
+    padding-bottom: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-contact100.contact {
+    margin-top: 20%;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .container {
+    grid-template-rows: auto;
+  }
+
+  section {
+    width: 98%;
+  }
+
+  .inspiration section {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .inspiration section img {
+    width: 98%;
+  }
+
+
+  .contact100-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact100-form .contact100-form-title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .wrap-input100 {
+    width: 98%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact100-form .container-contact100-form-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .contact100-form .container-contact100-form-btn button {
+    line-height: 34px;
+    padding: 0 16px;
+  }
+
+  .contact100-form input,
+  .contact100-form textarea {
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+  }
+
+  .contact100-form textarea {
+    height: 100px;
+  }
+}
+
+.shadowbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  display: none;
+
+}
+
+.shadowbox img {
+  max-width: 90%;
+  width: 100%;
+  max-height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: initial;/* Your code here - set to default setting */
+    transition: initial;/* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
