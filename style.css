@@ -12,6 +12,7 @@ body {
 
 .current a {
   color: rgba(70, 68, 75, 1);
+  background-color: yellow;
 }
 
 h1 {
