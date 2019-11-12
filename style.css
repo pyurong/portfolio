@@ -40,7 +40,7 @@ span {
 }
 
 nav a {
-  color: grey;
+  color: rgba(70, 68, 75, 1);
   font-weight: bold;
   text-decoration: none;
 }
